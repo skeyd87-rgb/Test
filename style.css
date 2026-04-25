@@ -1,0 +1,78 @@
+:root {
+  --bg: #20111a;
+  --panel: #2f1d2b;
+  --orange: #ff8c1a;
+  --orange-dark: #d96200;
+  --cream: #ffd89e;
+  --line: #ffb347;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #3b1d2f, var(--bg));
+  color: var(--cream);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  margin: 0 0 12px;
+  color: var(--orange);
+  text-shadow: 2px 2px #000;
+}
+
+#game {
+  border: 5px solid var(--orange);
+  background: #130a10;
+  image-rendering: pixelated;
+  box-shadow: 0 0 20px #000;
+}
+
+.panel {
+  width: min(90vw, 280px);
+  background: var(--panel);
+  border: 3px solid var(--orange-dark);
+  padding: 14px;
+}
+
+ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 2px solid var(--orange-dark);
+  background: var(--orange);
+  color: #2e1000;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+.note {
+  font-size: 12px;
+  color: #ffcc7b;
+}
